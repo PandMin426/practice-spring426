@@ -16,7 +16,7 @@ public class GreetController {
     private GreetingService greetingService;
 
     @GetMapping
-    public ResponseEntity<?> getGreet(@RequestParam String name){
+    public ResponseEntity<?> getGreet(@RequestParam String name) {
 
 
         return ResponseEntity.ok(greetingService.sayHello(name));
